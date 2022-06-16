@@ -14,6 +14,6 @@ Technologies used:
 Social media:
 
 - [Github](http://github.com/avilesxd/)
-- [Instagram](https://www.instagram.com/avilesxd/)
+- [Instagram](https://www.instagram.com/avilesxd/ "_blank")
 - [Facebook](https://www.facebook.com/ignacio.avilescardenasso)
 - [Youtube](https://www.youtube.com/channel/UCYPsgamO7XeWOrXriOpJBqw)
