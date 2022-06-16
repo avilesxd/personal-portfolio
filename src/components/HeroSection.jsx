@@ -8,7 +8,7 @@ function HeroSection() {
 					Hi 👋, This is Ignacio👨‍💻
 				</h1>
 				<p className="text-md md:text-xl max-w-md mb-3 text-gray-600 dark:text-gray-300">
-					I am a computer engineering student at the university of Arica.
+					a computer engineering student
 				</p>
 				<a
 					href="#works"
