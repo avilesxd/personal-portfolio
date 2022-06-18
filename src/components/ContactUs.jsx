@@ -1,19 +1,34 @@
 import React from 'react';
 import emailjs from '@emailjs/browser';
 
-export const ContactUs = () => {
+const ContactUs = () => {
+    const form = useRef();
 
-    const sendEmail = (event) => {
-        event.preventDefault();
+    const sendEmail = (e) => {
+        e.preventDefault();
 
-        emailjs.sendForm('service_qoz1yjo', 'template_yvv3v47', event.target, '0BiMchynUoeakAIHX')
-            .then(response => console.log(response))
-            .catch(error => console.log(error))
+        emailjs
+            .sendForm(
+                'service_qoz1yjo',
+                'template_yvv3v47',
+                event.target,
+                '0BiMchynUoeakAIHX'
+            )
+            .then(
+                (result) => {
+                    console.log(result.text);
+                    console.log("message sent")
+                },
+                (error) => {
+                    console.log(error.text);
+                }
+            );
     }
+
 
     return (
         <div>
-            <form onSubmit={ sendEmail }>
+            <form ref={ form } onSubmit={ sendEmail }>
                 <label>Name</label>
                 <input type="text" name='user_name' />
                 <hr />
