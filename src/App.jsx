@@ -32,15 +32,15 @@ function App() {
 		<>
 			<button
 				type="button"
-				onClick={handleThemeSwitch}
+				onClick={ handleThemeSwitch }
 				className="fixed z-10 right-2 top-2 bg-indigo-500 text-lg p-1 rounded-md"
 			>
-				{theme === 'dark' ? '🌙' : '🌞'}
+				{ theme === 'dark' ? '🌙' : '🌞' }
 			</button>
 			<div className="bg-white dark:bg-slate-900 min-h-screen font-inter ">
 				<div className="max-w-5xl w-11/12 mx-auto">
 					<HeroSection />
-					{/* <Services /> */}
+					{/* <Services /> */ }
 					<Works />
 					<About />
 					<Footer />
