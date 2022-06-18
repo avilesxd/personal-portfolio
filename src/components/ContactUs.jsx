@@ -11,7 +11,7 @@ const ContactUs = () => {
             .sendForm(
                 'service_qoz1yjo',
                 'template_yvv3v47',
-                event.target,
+                form.current,
                 '0BiMchynUoeakAIHX'
             )
             .then(
