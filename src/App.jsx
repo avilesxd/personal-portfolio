@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import About from './components/About';
+import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import HeroSection from './components/HeroSection';
 /* import Services from './components/Services'; */
@@ -43,6 +44,7 @@ function App() {
 					{/* <Services /> */ }
 					<Works />
 					<About />
+					<ContactSection />
 					<Footer />
 				</div>
 			</div>
