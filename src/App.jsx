@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import About from './components/About';
-import ContactMe from './components/ContactMe';
 import Footer from './components/Footer';
 import HeroSection from './components/HeroSection';
 /* import Services from './components/Services'; */
@@ -44,7 +43,6 @@ function App() {
 					{/* <Services /> */ }
 					<Works />
 					<About />
-					<ContactMe />
 					<Footer />
 				</div>
 			</div>
