@@ -21,7 +21,7 @@ export const ContactUs = () => {
 
     return (
         <div className='w-full content-center'>
-            <form autoComplete='off' ref={ form } onSubmit={ sendEmail }>
+            <form autoComplete='off' ref={ form } method="post" onSubmit={ sendEmail }>
                 <div className='text-center text-md md:text-xl mb-3'>
                     <label className='text-md md:text-xl max-w-md mb-3 font-semibold text-gray-600 dark:text-gray-300'>Name</label>
                     <div>
