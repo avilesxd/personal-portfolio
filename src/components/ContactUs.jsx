@@ -11,7 +11,7 @@ export const ContactUs = () => {
             icon: 'success',
             title: 'Your message has been sent',
             showConfirmButton: false,
-            timer: 5000
+            timer: 3000
         })
     }
 
