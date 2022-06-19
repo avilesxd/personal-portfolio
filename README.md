@@ -1,16 +1,23 @@
 # Page with dark mode and light mode
-![dark mode ](/src/images/dark-mode.jpeg) 
+
+![dark mode ](/src/images/dark-mode.jpeg)
 ![light mode ](/src/images/light-mode.jpeg)
+
 ## Personal Portfolio 💼
+
 ---
-**Visit website: https://ignacioaviles.netlify.app/**
----
+
+## **Visit website: https://ignacioaviles.netlify.app/**
+
 Technologies used:
 
-- [Vite.JS](https://vitejs.org/)
+- [Vite.JS](https://vitejs.dev/)
 - [React](https://reactjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
+- [EmailJS](https://www.emailjs.com/)
+
 ---
+
 Social media:
 
 - [Github](http://github.com/avilesxd/)
