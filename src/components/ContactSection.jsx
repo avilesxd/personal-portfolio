@@ -5,7 +5,7 @@ import ContactUs from './ContactUs'
 function ContactUS() {
     return (
         <>
-            <SectionTitle>Contact US</SectionTitle>
+            <SectionTitle>ContactUs</SectionTitle>
             <ContactUs />
         </>
 
