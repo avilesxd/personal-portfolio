@@ -1,17 +1,18 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 export const ContactUs = () => {
 
-    const sendEmail = (event) => {
-        event.preventDefault();
+    const form = useRef();
 
-        emailjs.sendForm('service_qoz1yjo', 'template_yvv3v47', event.target, '0BiMchynUoeakAIHX')
-            .then(
-                (result) => {
-                    console.log(result.text);
-                    console.log("message sent")
-                },
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_qoz1yjo', 'template_yvv3v47', fomr.current, '0BiMchynUoeakAIHX')
+            .then((result) => {
+                console.log(result.text);
+                console.log("message sent")
+            },
                 (error) => {
                     console.log(error.text);
                 }
@@ -20,7 +21,7 @@ export const ContactUs = () => {
 
     return (
         <div className='w-full content-center'>
-            <form autoComplete='off' onSubmit={ sendEmail }>
+            <form autoComplete='off' ref={ form } onSubmit={ sendEmail }>
                 <div className='text-center text-md md:text-xl mb-3'>
                     <label className='text-md md:text-xl max-w-md mb-3 font-semibold text-gray-600 dark:text-gray-300'>Name</label>
                     <div>
