@@ -7,9 +7,11 @@ export const ContactUs = () => {
 
     const showalert = () => {
         Swal.fire({
-            title: 'Your message has been sent',
+            position: 'top-end',
             icon: 'success',
-            button: 'Ok',
+            title: 'Your message has been sent',
+            showConfirmButton: false,
+            timer: 5000
         })
     }
 
