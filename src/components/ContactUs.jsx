@@ -7,9 +7,9 @@ export const ContactUs = () => {
 
     const sweetAlert = () => {
         Swal.fire({
-            position: 'top-end',
-            icon: 'success',
             title: 'Your message has been sent',
+            icon: 'success',
+            position: 'top-end',
             showConfirmButton: false,
             timer: 3000
         })
