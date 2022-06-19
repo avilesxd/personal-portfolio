@@ -5,6 +5,14 @@ import Swal from 'sweetalert2';
 
 export const ContactUs = () => {
 
+    const showalert = () => {
+        Swal.fire({
+            title: 'Your message has been sent',
+            icon: 'success',
+            Button: 'Ok',
+        })
+    }
+
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -13,15 +21,7 @@ export const ContactUs = () => {
         emailjs.sendForm('service_qoz1yjo', 'template_yvv3v47', form.current, '0BiMchynUoeakAIHX')
             .then((result) => {
                 console.log(result.text);
-                console.log("message sent")
-                Swal.fire({
-                    position: 'top-end',
-                    icon: 'success',
-                    title: 'Your message has been sent',
-                    showConfirmButton: false,
-                    timer: 5000
-                })
-
+                console.log("message sent");
             },
                 (error) => {
                     console.log(error.text);
@@ -53,12 +53,11 @@ export const ContactUs = () => {
                     </div>
                 </div>
                 <div className='text-center text-md md:text-xl mb-3'>
-                    <button type='submit' value='Send' className="inline-block px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:text-md">Send</button>
+                    <button onClick={ () => showalert() } type='submit' value='Send' className="inline-block px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:text-md">Send</button>
                 </div>
             </form>
         </div>
     )
-}
-
+};
 
 export default ContactUs;
