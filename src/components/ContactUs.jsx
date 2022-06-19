@@ -1,5 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
+
 
 export const ContactUs = () => {
 
@@ -12,6 +14,14 @@ export const ContactUs = () => {
             .then((result) => {
                 console.log(result.text);
                 console.log("message sent")
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: 'Your message has been sent',
+                    showConfirmButton: false,
+                    timer: 5000
+                })
+
             },
                 (error) => {
                     console.log(error.text);
