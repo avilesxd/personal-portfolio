@@ -5,7 +5,7 @@ import Swal from 'sweetalert2';
 
 export const ContactUs = () => {
 
-    const showalert = () => {
+    const sweetAlert = () => {
         Swal.fire({
             position: 'top-end',
             icon: 'success',
@@ -55,7 +55,7 @@ export const ContactUs = () => {
                     </div>
                 </div>
                 <div className='text-center text-md md:text-xl mb-3'>
-                    <button onClick={ () => showalert() } type='submit' value='Send' className="inline-block px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:text-md">Send</button>
+                    <button onClick={ () => sweetAlert() } type='submit' value='Send' className="inline-block px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:text-md">Send</button>
                 </div>
             </form>
         </div>
