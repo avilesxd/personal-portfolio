@@ -9,7 +9,7 @@ export const ContactUs = () => {
         Swal.fire({
             title: 'Your message has been sent',
             icon: 'success',
-            Button: 'Ok',
+            button: 'Ok',
         })
     }
 
