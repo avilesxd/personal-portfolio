@@ -9,9 +9,20 @@ export const ContactUs = () => {
         Swal.fire({
             title: 'Your message has been sent',
             icon: 'success',
+            padding: '1em',
             position: 'top-end',
+            grow: 'top-end',
+            color: 'rgb(209, 213, 219)',
+            background: 'rgba(79, 70, 229)',
             showConfirmButton: false,
-            timer: 3000
+            timerProgressBar: true,
+            timer: 3000,
+            showClass: {
+                popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+                popup: 'animate__animated animate__fadeOutUp'
+            }
         })
     }
 
