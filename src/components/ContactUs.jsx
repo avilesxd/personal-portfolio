@@ -14,9 +14,8 @@ export const ContactUs = () => {
             grow: 'top-end',
             color: 'rgb(209, 213, 219)',
             background: 'rgba(79, 70, 229)',
-            showConfirmButton: false,
-            timerProgressBar: true,
-            timer: 3000,
+            showConfirmButton: true,
+            timer: 5000,
             showClass: {
                 popup: 'animate__animated animate__fadeInDown'
             },
