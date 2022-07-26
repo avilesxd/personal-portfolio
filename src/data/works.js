@@ -8,7 +8,8 @@ export default [
   },
   {
     title: 'Personal Blog',
-    imgUrl: '',
+    imgUrl:
+      'https://raw.githubusercontent.com/avilesxd/personal-portfolio/master/src/images/Work2.jpg',
     tech: ['GoHugo'],
     workUrl: 'https://github.com/avilesxd/personal-blog'
   }
